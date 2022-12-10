@@ -7,7 +7,7 @@ const StudentIDInput = () => {
     <View style={{padding: 10, paddingTop: 30}}>
       <TextInput
         style={{height: 40, borderBottomColor: "black", borderBottomWidth: 1}}
-        placeholder="Type here your student ID!"
+        placeholder="학번을 입력하세요"
         onChangeText={newText => setText(newText)}
         defaultValue={text}
         

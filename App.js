@@ -1,6 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import OnboardingView from './src/components/onboarding/OnboardingView.js'
 import MainNavigator from './src/components/onboarding/MainNavigator.js';
 
 export default function App() {

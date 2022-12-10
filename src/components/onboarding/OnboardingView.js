@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, KeyboardAvoidingView } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StudentIDInput from "./StudentIDInput.js"
 import StudentMajorInput from "./StudentMajorInput.js"
@@ -9,23 +9,23 @@ import OnboardingLogo from "./OnboardingLogo.js"
 
 const OnboardingView = ({navigation}) => {
   return (
-    <View
-      style={styles.container}
-    >
-      {/* <View style={{ backgroundColor: "blue", flex: 1 }} /> */}
-      {/* <View style={{ backgroundColor: "red", flex: 1 }} /> */}
-      <OnboardingLogo />
-      <StudentIDInput />
-      <StudentMajorInput />
-      <View style={styles.button}>
-        <Button
-          title= '평가 시작'
-          onPress={() => navigation.navigate('Main')}
-          color='floralwhite'
-        />
-      </View>
+      <View
+        style={styles.container}
+      >
+        {/* <View style={{ backgroundColor: "blue", flex: 1 }} /> */}
+        {/* <View style={{ backgroundColor: "red", flex: 1 }} /> */}
+        <OnboardingLogo />
+        <StudentIDInput />
+        <StudentMajorInput />
+        <View style={styles.button}>
+          <Button
+            title= '평가 시작'
+            onPress={() => navigation.navigate('Main')}
+            color='floralwhite'
+          />
+        </View>
 
-    </View>
+      </View>
   );
 };
 

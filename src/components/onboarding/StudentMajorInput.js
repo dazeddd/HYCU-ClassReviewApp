@@ -7,7 +7,7 @@ const StudentMajorInput = () => {
     <View style={{padding: 10, paddingTop: 20}}>
       <TextInput
         style={{height: 40, borderBottomColor: "black", borderBottomWidth: 1}}
-        placeholder="Type here your major"
+        placeholder="전공을 입력하세요"
         onChangeText={newText => setText(newText)}
         defaultValue={text}
         
